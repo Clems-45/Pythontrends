@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0d9b46c9-a785-4dab-b91f-8030d7d17f19}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>aihomeduties.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="aihomeduties.py" />
+    <Compile Include="aihomeduties2.py" />
+    <Compile Include="blank.py" />
+    <Compile Include="classintro.py" />
+    <Compile Include="dict1.py" />
+    <Compile Include="helloworld.py" />
+    <Compile Include="helloworld2.py" />
+    <Compile Include="infinite.py" />
+    <Compile Include="list.py" />
+    <Compile Include="module.py" />
+    <Compile Include="stringformop.py" />
+    <Compile Include="tinymodule.py" />
+    <Compile Include="tuples.py" />
+    <Compile Include="xforpy.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
