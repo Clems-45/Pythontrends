@@ -59,7 +59,7 @@ class bedRoom:
                 #this function acts behind the scene to check if a string is been input, if its not it will throw
                 #an exception .
                 
-                reaLcheck=bedRoom +"chicken"
+                reaLcheck=bedroMspefs +"chicken"
                 if bedroMspefs == "A":
                     # check indention in future whether it affects the class
                     overalldat1.functiondatTemp()
@@ -85,11 +85,13 @@ class bedRoom:
 
 
             finally:
+               print (bedroMspefs)
                if bedroMspefs != "A" or bedroMspefs != "B" or bedroMspefs != "C" or bedroMspefs != "D":
 
             # this will function will be run finally after the variable whether the reaLcheck has escaped the exception or not
             # this will work because of the code says "finally".
                   overalldat1.chooSefunction()
+
 
 
 

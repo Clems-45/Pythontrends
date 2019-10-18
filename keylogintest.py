@@ -1,47 +1,64 @@
 def loGtest():
 
 
-    user_key = {'purple': 5, 'blue': 1, 'red': 2, 'yellow': 3}
+    user_key = {'kelvin@gmail.com': 5, 'blue': 1, 'red': 2, 'yellow': 3}
 
 
     passKey = {5: 'rt'}
 
-
-
-
-    uSerName = input('enter username ')
-    paSsword = input('enter password')
     pkey=0
+
+   # this gives the set of keys and values that can be displayed for the administrator to see about login details
+
     d = user_key.keys()
-    print (d)
+
 
     f = user_key.values()
-    print(f)
 
-    for x in f:
+    print(d)
+    print(f)
+    #  this is the end  the set containing keys and values which might not be used
+
+    tempUse=0
+
+    uSerName = input('enter username ')
+
+    for x in user_key:
         # we can add append list to store them in order
         # #we have to create that order for now we just want the highest
-        if uSerName == x:
+
+        if x == uSerName:
             ukey = user_key[x]
             # temporary value 'ukey' to hold key , variable will be used later to find the password
             # and comparison made for a match and the function can proceed
+
             pkey = passKey[ukey]
 
-            if pkey == paSsword:
-                print('congrats you gained entrance to the system ')
-                print('proceed to login')
-                # next function can be loaded
-            elif pkey != paSsword:
-                print ('wrong password')
-
-        elif uSerName != x :
-            print('enter right username or email ')
 
 
-    print ('pkey')
+            # there should be a variable being passed from out put if this loop if it found the name  worked and if it did not find anything
+            tempUse = uSerName
 
 
 
+#  we can exit the loop now that we have located the password location and stored it some where to be used later
+
+
+    if tempUse==uSerName :
+        print ('Username is found ')
+        paSsword = input('enter password')
+
+        if pkey == paSsword:
+            print('congrats you gained entrance to the system ')
+            print('proceed to login')
+            # next function can be loaded
+        elif pkey != paSsword:
+            print('wrong password you will be directed back to enter Username allover again')
+            loGtest()
+
+    elif tempUse !=uSerName :
+         print('enter the right username or email ')
+         loGtest()
 
 
 

@@ -1,0 +1,24 @@
+
+
+
+
+
+* Must come back and finnish the error handler aspect 
+for the code so the machine can know its input whether 
+its a string or number
+ i mean this code <finalaihomechoicesErrHandle.py>
+
+
+ 10/18/2019
+
+
+ to-do-10/18/2019
+- i should have figured how use the arg method 
+*to create, write and read unto files , delete from files
+ .insert into a specific line or point when specified 
+ .delete  from a specific line or point when specified
+ .write including concatenation unto  a specific line or point when specified
+ #replace  a specific line or point when specified
+
+ -figure out if i cant survive without the arg and i cant use just the 
+ script to create without the arg initializing thing 

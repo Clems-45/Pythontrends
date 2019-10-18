@@ -10,4 +10,4 @@ also  giving printing the answer amongst other statements.
     print(c)
     # calling docstring command can later be made into a function
 def wikisayHello():
-    print(sayHello.__doc__)
+    print('sayHello')
